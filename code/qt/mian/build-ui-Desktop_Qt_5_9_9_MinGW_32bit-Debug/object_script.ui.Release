@@ -1,0 +1,13 @@
+INPUT(
+./release\es1667.o
+./release\main.o
+./release\meterdetail.o
+./release\mychart.o
+./release\mywindow.o
+./release\serial.o
+./release\moc_es1667.o
+./release\moc_meterdetail.o
+./release\moc_mychart.o
+./release\moc_mywindow.o
+./release\moc_serial.o
+);

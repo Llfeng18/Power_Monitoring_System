@@ -1,0 +1,1943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>1600</width>
+      <height>1200</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1200</width>
+      <height>1000</height>
+     </size>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="whatsThis">
+      <string>总电表模式</string>
+     </property>
+     <property name="accessibleName">
+      <string/>
+     </property>
+     <attribute name="title">
+      <string> 监控主页</string>
+     </attribute>
+     <widget class="QWidget" name="widget_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>40</y>
+        <width>310</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>280</width>
+        <height>40</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="minimumSize">
+          <size>
+           <width>130</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>排序方式：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="parity">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>40</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>默认排序</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>故障优先</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_10" native="true">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>129</y>
+        <width>1601</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="widget_6" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_7" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QWidget" name="widget_8" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_9" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLineEdit" name="voltage_1"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current1"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power1"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表1</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_11" native="true">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_12" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QWidget" name="widget_13" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_14" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QLineEdit" name="voltage2"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current2"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power2"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_15" native="true">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_16" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QWidget" name="widget_17" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_18" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QLineEdit" name="voltage3"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current3"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power3"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表3</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_19" native="true">
+       <property name="geometry">
+        <rect>
+         <x>840</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_20" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QWidget" name="widget_21" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_22" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QLineEdit" name="voltage4"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current4"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power4"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表4</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_23" native="true">
+       <property name="geometry">
+        <rect>
+         <x>1120</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_24" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QWidget" name="widget_25" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_22">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_24">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_26" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <item>
+             <widget class="QLineEdit" name="voltage5"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current5"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power5"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表5</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_27" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>1601</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="widget_28" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_29" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QWidget" name="widget_30" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_13">
+            <item>
+             <widget class="QLabel" name="label_26">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_27">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_28">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_31" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_14">
+            <item>
+             <widget class="QLineEdit" name="voltage6"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current6"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power6"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表6</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_32" native="true">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_33" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QWidget" name="widget_34" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_15">
+            <item>
+             <widget class="QLabel" name="label_30">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_35" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_16">
+            <item>
+             <widget class="QLineEdit" name="voltage7"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current7"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power7"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表7</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_36" native="true">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_37" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QWidget" name="widget_38" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_17">
+            <item>
+             <widget class="QLabel" name="label_34">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_35">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_36">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_39" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_18">
+            <item>
+             <widget class="QLineEdit" name="voltage8"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current8"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power8"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表8</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_40" native="true">
+       <property name="geometry">
+        <rect>
+         <x>840</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_41" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QWidget" name="widget_42" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_19">
+            <item>
+             <widget class="QLabel" name="label_38">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_39">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_40">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_43" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_20">
+            <item>
+             <widget class="QLineEdit" name="voltage9"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current9"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power9"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>80</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表9</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_44" native="true">
+       <property name="geometry">
+        <rect>
+         <x>1120</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_45" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QWidget" name="widget_46" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_21">
+            <item>
+             <widget class="QLabel" name="label_42">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_43">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_44">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_47" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_22">
+            <item>
+             <widget class="QLineEdit" name="voltage10"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="current10"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power10"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>91</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表10</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_48" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>650</y>
+        <width>1601</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="widget_49" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_50" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item>
+          <widget class="QWidget" name="widget_51" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_23">
+            <item>
+             <widget class="QLabel" name="label_46">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_47">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_48">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_52" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_24">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_34"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_35"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_36"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_49">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>101</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表11</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_53" native="true">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_54" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item>
+          <widget class="QWidget" name="widget_55" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_25">
+            <item>
+             <widget class="QLabel" name="label_50">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_51">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_52">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_56" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_26">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_37"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_38"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_39"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_53">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>101</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表12</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_57" native="true">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_58" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QWidget" name="widget_59" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_27">
+            <item>
+             <widget class="QLabel" name="label_54">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_55">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_56">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_60" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_28">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_40"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_41"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_42"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_57">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>101</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表13</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_61" native="true">
+       <property name="geometry">
+        <rect>
+         <x>840</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_62" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <widget class="QWidget" name="widget_63" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_29">
+            <item>
+             <widget class="QLabel" name="label_58">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_59">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_60">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_64" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_30">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_43"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_44"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_45"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>101</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表14</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_65" native="true">
+       <property name="geometry">
+        <rect>
+         <x>1120</x>
+         <y>10</y>
+         <width>251</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="widget_66" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>250</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>190</width>
+          <height>160</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <widget class="QWidget" name="widget_67" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>140</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_31">
+            <item>
+             <widget class="QLabel" name="label_62">
+              <property name="text">
+               <string>电压:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_63">
+              <property name="text">
+               <string>电流:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_64">
+              <property name="text">
+               <string>功率:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_68" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>150</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_32">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_46"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_47"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_48"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_65">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>111</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>  电表15</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>40</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>电表数据详情</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>拓扑</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Serial">
+    <property name="title">
+     <string>串口</string>
+    </property>
+    <addaction name="actionSerial"/>
+   </widget>
+   <widget class="QMenu" name="mode">
+    <property name="title">
+     <string>模式</string>
+    </property>
+    <addaction name="actionall_meter"/>
+    <addaction name="actionTopology"/>
+    <addaction name="actionmonnitor"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>网络配置</string>
+    </property>
+    <addaction name="actionES1667"/>
+    <addaction name="actionMeterSet"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="actionopen"/>
+    <addaction name="actionrecent"/>
+    <addaction name="actionSeesions"/>
+    <addaction name="actionprint"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>查询</string>
+    </property>
+    <addaction name="actionecent"/>
+    <addaction name="actionhistoryevent"/>
+    <addaction name="actioncurve"/>
+    <addaction name="actionelechary"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actiondirectory"/>
+    <addaction name="actionindex"/>
+    <addaction name="actionHelp"/>
+    <addaction name="actionReportBug"/>
+    <addaction name="actionSyetemInformation"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="Serial"/>
+   <addaction name="mode"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionall_meter">
+   <property name="text">
+    <string>实时数据</string>
+   </property>
+  </action>
+  <action name="actionTopology">
+   <property name="text">
+    <string>网络拓扑</string>
+   </property>
+  </action>
+  <action name="actionSerial">
+   <property name="text">
+    <string>串口设置</string>
+   </property>
+  </action>
+  <action name="actionES1667">
+   <property name="text">
+    <string>ES1667</string>
+   </property>
+  </action>
+  <action name="actionMeterSet">
+   <property name="text">
+    <string>电表设置</string>
+   </property>
+  </action>
+  <action name="actiondirectory">
+   <property name="text">
+    <string>目录</string>
+   </property>
+  </action>
+  <action name="actionindex">
+   <property name="text">
+    <string>索引</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionReportBug">
+   <property name="text">
+    <string>ReportBug</string>
+   </property>
+  </action>
+  <action name="actionSyetemInformation">
+   <property name="text">
+    <string>SyetemInformation</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>打开文件或项目</string>
+   </property>
+  </action>
+  <action name="actionnew">
+   <property name="text">
+    <string>新建文件或项目</string>
+   </property>
+  </action>
+  <action name="actionrecent">
+   <property name="text">
+    <string>最近访问的项目</string>
+   </property>
+  </action>
+  <action name="actionSeesions">
+   <property name="text">
+    <string>Seesions</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionprint">
+   <property name="text">
+    <string>打印</string>
+   </property>
+  </action>
+  <action name="actionecent">
+   <property name="text">
+    <string>事件查询</string>
+   </property>
+  </action>
+  <action name="actionmonnitor">
+   <property name="text">
+    <string>监控主页</string>
+   </property>
+  </action>
+  <action name="actionhistoryevent">
+   <property name="text">
+    <string>历史事件</string>
+   </property>
+  </action>
+  <action name="actioncurve">
+   <property name="text">
+    <string>历史曲线查询</string>
+   </property>
+  </action>
+  <action name="actionelechary">
+   <property name="text">
+    <string>电费查询</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

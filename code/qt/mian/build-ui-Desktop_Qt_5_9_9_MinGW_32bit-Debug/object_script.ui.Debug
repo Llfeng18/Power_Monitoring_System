@@ -1,0 +1,13 @@
+INPUT(
+./debug\es1667.o
+./debug\main.o
+./debug\meterdetail.o
+./debug\mychart.o
+./debug\mywindow.o
+./debug\serial.o
+./debug\moc_es1667.o
+./debug\moc_meterdetail.o
+./debug\moc_mychart.o
+./debug\moc_mywindow.o
+./debug\moc_serial.o
+);
